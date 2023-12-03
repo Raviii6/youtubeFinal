@@ -1,0 +1,80 @@
+/* Add this to your existing styles.css file */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    background-color: #7b4343;
+}
+
+.header {
+    background-color: #fff;
+    padding: 15px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+
+
+/* Add this to your existing styles.css file */
+
+.controls-container {
+    margin-bottom: 20px;
+}
+
+#channelId {
+    padding: 8px;
+    margin-right: 10px;
+}
+
+#getThumbnailsBtn {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.thumbnails-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.thumbnail-img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.thumbnail-title {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #888;
+    text-align: center;
+}
+
+.thumbnail-img:hover {
+    transform: scale(1.1);
+}
